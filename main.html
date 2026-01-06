@@ -3,11 +3,110 @@
 <html>
 
 <head>
+	 <style>
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+
+        .middle {
+            margin: auto;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	 <!-- Page Heading -->
+    <h1 style="text-align:center;">HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle" width="100%">
+    <tr>
+        <td id="t11">Left</td>
+        <td id="t12" class="center">Center</td>
+        <td id="t13" class="right">Right</td>
+    </tr>
+    <tr>
+        <td>Left</td>
+        <td class="center">Center</td>
+        <td class="right">Right</td>
+    </tr>
+    <tr>
+        <td>Left</td>
+        <td class="center">Center</td>
+        <td class="right">Right</td>
+    </tr>
+</table>
+
+
+    <br>
+
+<table id="table-2" class="middle" width="100%" height="100px">
+        <tr>
+            <td id="t21" colspan="6"></td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="2" colspan="3"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan=6></td>
+        </tr>
+    </table>
+
+
+    <br>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle" width="100%">
+        <tr class="green">
+            <td>Green Row</td>
+        </tr>
+        <tr>
+            <td id="t-image" align="center">
+				<img src="https://picsum.photos/200" alt="Random Image">
+			</td>
+        </tr>
+        <tr class="blue">
+            <td>Blue Row</td>
+        </tr>
+    </table>
     <script type="text/javascript" src="./script.js">
 </script>
 
